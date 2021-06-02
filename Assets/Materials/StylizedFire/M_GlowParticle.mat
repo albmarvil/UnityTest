@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FireFlame
-  m_Shader: {fileID: 4800000, guid: 8f34628cb69544c42a06d51acbf9dd23, type: 3}
-  m_ShaderKeywords: _ALPHABLEND_ON _COLORADDSUBDIFF_ON _EMISSION
+  m_Name: M_GlowParticle
+  m_Shader: {fileID: 4800000, guid: 257cd36bf222a5c47bb72f4b53aef715, type: 3}
+  m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -39,10 +39,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _FireMasksTexture:
-        m_Texture: {fileID: 2800000, guid: 98ffcba14922add4d96fd60028011385, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -59,71 +55,50 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _tex3coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _texcoord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _texcoord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord4:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BlendOp: 0
     - _BumpScale: 1
-    - _CameraFadingEnabled: 0
-    - _CameraFarFadeDistance: 2
-    - _CameraNearFadeDistance: 1
-    - _ColorMode: 1
-    - _Cull: 2
     - _Cutoff: 0.5
+    - _DepthFadeDistance: 0.2
     - _DetailNormalMapScale: 1
-    - _DistortionAmount: 4.11
-    - _DistortionBlend: 0.5
-    - _DistortionEnabled: 0
-    - _DistortionStrength: 1
-    - _DistortionStrengthScaled: 0
-    - _DstBlend: 1
-    - _EmissionEnabled: 1
-    - _FlipbookMode: 0
-    - _Float0: 3.35
+    - _DstBlend: 0
+    - _EmissiveBoost: 1
+    - _EmissiveBoostFromParticle: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HDistortionAmount: 22.54
-    - _HDistortion_OscilationFreq: 1
-    - _HNoise_Mult: 1
-    - _HNoise_Power: 1.5
-    - _LightingEnabled: 0
     - _Metallic: 0
-    - _Mode: 4
-    - _Noise_Mult: 1
-    - _Noise_Power: 2.42
+    - _Mode: 0
     - _OcclusionStrength: 1
-    - _OpacityMaskGradient_Power: 1.3
     - _Parallax: 0.02
+    - _Radius: 0.5
     - _SmoothnessTextureChannel: 0
-    - _SoftParticlesEnabled: 0
-    - _SoftParticlesFarFadeDistance: 1
-    - _SoftParticlesNearFadeDistance: 0
+    - _Softness: 0.2
     - _SpecularHighlights: 1
-    - _SrcBlend: 5
+    - _SrcBlend: 1
     - _UVSec: 0
-    - _VDistortionAmount: 4.11
-    - _VDistortion_GradientMaskPower: 2.4
-    - _VDistortion_GradientMaskPower1: 3.35
-    - _VNoise_Mult: 1
-    - _VNoise_Power: 2.42
-    - _VerticalGradientPower: 2.42
-    - _ZWrite: 0
+    - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 0, g: 0, b: 0, a: 1}
-    - _ColorAddSubDiff: {r: 1, g: 0, b: 0, a: 0}
-    - _CoreColor: {r: 5.992157, g: 4.8627453, b: 0.5019608, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HNoise_Panning: {r: 0.2, g: -0.1, b: 0, a: 0}
-    - _HNoise_Tiling: {r: 0.1, g: 0.1, b: 0, a: 0}
-    - _MainColor: {r: 2, g: 0.18755984, b: 0, a: 0}
-    - _Noise_Panning: {r: 0, g: -0.23, b: 0, a: 0}
-    - _Noise_Tiling: {r: 0.26, g: 0.3, b: 0, a: 0}
-    - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
-    - _VNoise_Panning: {r: 0, g: -0.25, b: 0, a: 0}
-    - _VNoise_Tiling: {r: 0.26, g: 0.3, b: 0, a: 0}
   m_BuildTextureStacks: []
